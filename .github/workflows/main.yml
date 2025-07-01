@@ -28,6 +28,7 @@ jobs:
         python -m pip install --upgrade pip 
         pip install flake8 flake8-isort
         pip install -r ./backend/requirements.txt
+        pip list
     # Запускаем flake8
     - name: Test with flake8 and django tests
       # Вызываем flake8 и указываем ему,
